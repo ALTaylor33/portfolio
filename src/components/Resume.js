@@ -4,8 +4,8 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 const Resume = () => {
   const handleDownload = () => {
     const downloadLink = document.createElement('a');
-    downloadLink.href = '/path/to/your/resume.pdf';
-    downloadLink.download = 'resume.pdf';
+    downloadLink.href = '../../public/assets/img/Resume.pdf';
+    downloadLink.download = 'AustinTaylorResume.pdf';
     document.body.appendChild(downloadLink);
     downloadLink.click();
     document.body.removeChild(downloadLink);
